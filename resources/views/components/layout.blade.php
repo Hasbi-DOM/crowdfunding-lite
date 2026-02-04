@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Dashboard Page</title>
+    <title>Layout</title>
 </head>
 <body class="h-full">
     <div class="min-h-full">
