@@ -53,9 +53,12 @@
                                 <p class="text-[#6A7282] text-sm">39 hari lagi</p>
                             </div>
                         </div>
-                        <button class="w-full py-3 bg-[#4F39F6] hover:bg-[#3B2AD9] active:bg-[#4F39F6] rounded-lg">
-                            <p class="text-base text-white">Donasi Sekarang</p>
-                        </button>
+                        <a
+                            href="/donations"
+                            class="block w-full py-3 bg-[#4F39F6] hover:bg-[#3B2AD9] active:bg-[#4F39F6] rounded-lg text-center"
+                            >
+                            <span class="text-base text-white">Donate Now</span>
+                        </a>
                     </div>
                 </div>
             </div>
