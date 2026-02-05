@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('campaigns', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('end_date');
             $table->string('title');
-            $table->string('description');
+            $table->text('description');
             $table->string('image');
             $table->decimal('target_amount', 10, 2);
             $table->decimal('current_amount', 10, 2);
+            $table->string('category');
         });
     }
 

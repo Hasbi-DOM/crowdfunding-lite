@@ -19,8 +19,7 @@ return new class extends Migration
                 ->constrained('campaigns')
                 ->cascadeOnDelete();
             $table->decimal('amount', 10, 2);
-            $table->string('image');
-            $table->tinyInteger('is_verified')->default(0);
+            $table->string('message');
         });
     }
 

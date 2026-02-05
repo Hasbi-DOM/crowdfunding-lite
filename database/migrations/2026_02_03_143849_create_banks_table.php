@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('banks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('donation_id')
-                ->constrained('donations')
+            $table->foreignId('campaign_id')
+                ->constrained('campaigns')
                 ->cascadeOnDelete();
-            $table->timestamps();
-            $table->string('name');
+            $table->string('bank_name');
             $table->string('account_number');
-            $table->string('account_name');
+            $table->string('account_holder');
+            $table->timestamps();
         });
     }
 
