@@ -7,17 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Bank extends Model
 {
     protected $fillable = [
-        'id',
-        'donation_id',
-        'name',
+        'campaign_id',
+        'bank_name',
         'account_number',
-        'account_name',
-        'created_at',
-        'updated_at'
+        'account_holder',
     ];
 
-    public function Donation () 
+    public function Campaign () 
     {
-        return $this->hasOne(Donation::class);
+        return $this->belongsTo(Campaign::class);
     }
 }
