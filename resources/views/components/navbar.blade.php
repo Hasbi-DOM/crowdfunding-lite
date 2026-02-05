@@ -8,9 +8,9 @@
         </p>
     </div>
     <a 
-        href="/campaign" 
+        href="/campaigns/create" 
         x-data
-        x-show="window.location.pathname !== '/campaign'"
+        x-show="window.location.pathname !== '/campaigns/create'"
         class="px-4 py-2 bg-[#4F39F6] hover:bg-[#3B2AD9] active:bg-[#4F39F6] rounded-lg"
     >
         <p class="text-sm text-white">
