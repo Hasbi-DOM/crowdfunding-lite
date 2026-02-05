@@ -1,15 +1,16 @@
 <?php
 
+use App\Http\Controllers\CampaignController;
+use App\Http\Controllers\DonationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('dashboard');
+    return redirect()->route('campaigns.index');
 });
+// Route::get('/campaigns/{id}', [CampaignController::class, 'show'])
+//     ->name('campaigns.show');
 
-Route::get('/donations', function () {
-    return view('donation');
-});
+Route::resource('campaigns', CampaignController::class);
 
-Route::get('/campaign', function () {
-    return view('campaign');
-});
+Route::post('/campaigns/{campaign}/donations', [DonationController::class, 'store'])
+    ->name('donations.store');
