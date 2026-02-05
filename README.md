@@ -64,3 +64,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Usage
+1. Install wamp + start
+2. Buka folder project
+3. Jalankan npm install
+4. Jalankan composer run dev
